@@ -1,6 +1,6 @@
 # Encryption.App
 
-![Encryption App](https://github.com/royhodge/encryption.app/master/assets/logo.png] "Encryption App")
+![Encryption App](https://github.com/royhodge/encryption.app/blob/master/logo.png?raw=true] "Encryption App")
 
 cryptIT v2 for unibit labs..
 added button for emailing encrypted data to someone, 
