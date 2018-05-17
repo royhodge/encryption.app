@@ -1,5 +1,7 @@
 # Encryption.App
 
+![https://github.com/royhodge/encryption.app/blob/master/logo.png](Encryption.App)
+
 cryptIT v2 for unibit labs..
 added button for emailing encrypted data to someone, 
 and a button for saving the encrypted data to blockchain.
