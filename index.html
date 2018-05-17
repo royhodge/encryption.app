@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>CryptIt v2</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="./assets/css/style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="./assets/css/style-button.css">
+		<link rel="shortcut icon" type="image/png" href="logo.png"/>
+	</head>
+	<body>
+		<a class="back"></a>
+		<div id="stage">
+			<div id="step1">
+				<div class="content"><center>
+					<img src="logo.png" height="275" width="275"></img></center><br><br>
+					<br>
+			    <a class="bttn-dark encrypt">Encrypt A File</a> <br><br>
+					<a class="bttn-dark decrypt">Decrypt A File</a>
+				</div>
+			</div>
+			<div id="step2">
+				<div class="content if-encrypt">
+					<h1>Choose which file to encrypt</h1>
+					<h3>An encrypted copy of the file will be generated.</h3>
+					<a class="bttn-dark button browse">Browse</a>
+					<input type="file" id="encrypt-input" />
+				</div>
+				<div class="content if-decrypt">
+					<h1>Choose which file to decrypt</h1>
+					<h2>Only files encrypted by this tool are accepted.</h2>
+					<a class="button browse bttn-dark">Browse</a>
+					<input type="file" id="decrypt-input" />
+				</div>
+			</div>
+			<div id="step3">
+				<div class="content if-encrypt">
+					<h1>Enter a pass phrase</h1>
+					<h2>This phrase will be used as an encryption key. Write it down or remember it; you won't be able to restore the file without it. </h2>
+					<input type="password" />
+					<a class="button process bttn-dark">Encrypt!</a>
+				</div>
+				<div class="content if-decrypt">
+					<h1>Enter the pass phrase</h1>
+					<h2>Enter the pass phrase that was used to encrypt this file. It is not possible to decrypt it without it.</h2>
+					<input type="password" />
+					<a class="button process bttn-dark">Decrypt!</a>
+				</div>
+			</div>
+			<div id="step4">
+				<div class="content">
+					<h1>Your file is ready!</h1>
+					<a class="bttn-dark button download">Download IT</a>
+					<a class="bttn-dark button download">Email IT</a>
+					<a class="bttn-dark button download">BlockChain IT</a>
+				</div>
+			</div>
+		</div>
+		<footer id="footer">
+			<center>
+				<div class="example1">
+<h3>Discuss the Encryption App with us on <a href="#">Discord</a>!
+ </h3>
+</div><br>
+			</center>
+		</footer>
+		<script>
+		document.getElementById("footer").onmouseover = function() {mouseOver()};
+		document.getElementById("footer").onmouseout = function() {mouseOut()};
+
+		function mouseOver() {
+		    document.getElementById("footer").style.color = "#8b54cf";
+		}
+
+		function mouseOut() {
+		    document.getElementById("footer").style.color = "white";
+		}
+		</script>
+	</body>
+	<!-- Include the AES algorithm of the crypto library -->
+	<script src="./assets/js/aes.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="./assets/js/script.js"></script>
+</html>
